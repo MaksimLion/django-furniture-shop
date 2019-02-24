@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block extra-styles %}
+    <link rel="stylesheet" href="{% static 'css/categories.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media-categories.css' %} ">
+{% endblock extra-styles %}
+{% block content %}
+    
+    <div class="categories">
+        <div class="categories-item kitchens">
+            <h2>кухни</h2>
+        </div>
+        <div class="categories-item wardrobes">
+            <h2>шкафы-купе</h2>
+        </div>
+        <div class="categories-item showcases">
+            <h2>витрины</h2>
+        </div>
+        <div class="categories-item lounges">
+            <h2>гостиные</h2>
+        </div>
+        <div class="categories-item offices">
+            <h2>мебель для офиса</h2>
+        </div>
+        <div class="categories-item closets">
+            <h2>гардеробные</h2>
+        </div>
+        <div class="categories-item hallways">
+            <h2>прихожие</h2>
+        </div>
+        <div class="categories-item child">
+            <h2>детские</h2>
+        </div>
+        <div class="categories-item others">
+            <h2>кровати, комоды, тумбы</h2>
+        </div>
+    </div>
+
+{% endblock content%}

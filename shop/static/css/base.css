@@ -30,9 +30,15 @@ header {
     text-transform: uppercase;
 }
 
+.menu ul li a{
+    text-decoration: none;
+    color: white;   
+}
+
+
+
 .info-block {
     width: 20%;
-    padding-right: 10px;
 }
 
 .info-text {

@@ -1,0 +1,96 @@
+.categories{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+
+.categories-item{
+    height: 350px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    background-size: cover;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.categories-item h2{
+    margin: auto;
+    color:white;
+    padding: 10px;
+    background-color:black;
+}
+
+.kitchens{
+    background-image: url('../images/kitchen-1.jpg'); 
+}
+
+.kitchens:hover{
+    background-image: url('../images/kitchen-2.jpg');
+}
+
+.wardrobes{
+    background-image: url('../images/wardrobe-1.jpg');
+}
+
+.wardrobes:hover{
+    background-image: url('../images/wardrobe-2.jpg');
+}
+
+.showcases{
+    background-image: url('../images/showcase-1.jpg');
+}
+
+.showcases:hover{
+    background-image: url('../images/showcase-2.jpg');
+}
+
+.lounges{
+    background-image: url('../images/lounge-1.jpg');
+}
+
+.lounges:hover{
+    background-image: url('../images/lounge-2.jpg');
+}
+
+.offices{
+    background-image: url('../images/office-1.jpeg');
+}
+
+.offices:hover{
+    background-image: url('../images/office-2.jpg');
+}
+
+.closets{
+    background-image: url('../images/closet-1.jpg');
+}
+
+.closets:hover{
+    background-image: url('../images/closet-2.jpeg');
+}
+
+.hallways{
+    background-image: url('../images/hallway-1.jpg');
+}
+
+.hallways:hover{
+    background-image: url('../images/hallway-2.jpg');
+}
+
+.child{
+    background-image: url('../images/child-1.jpg');
+}
+
+.child:hover{
+    background-image: url('../images/child-2.jpeg');
+}
+
+.others{
+    background-image: url('../images/other-1.jpg');
+}
+
+.others:hover{
+    background-image: url('../images/other-2.jpg');
+}
