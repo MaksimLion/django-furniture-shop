@@ -1,0 +1,32 @@
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+    header {
+        flex-direction: column;
+    }
+    
+    .menu {
+        display: block;
+        width: 100%;
+    }
+
+    .menu ul li {
+        text-align: center;
+    }
+
+    .info-block {
+        width: 100%;
+    }
+
+    .numbers { 
+        margin-bottom: 30px;
+    }
+
+    .small-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .small-menu ul li{
+        margin-top:10px;
+    }
+    
+}
