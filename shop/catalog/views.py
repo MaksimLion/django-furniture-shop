@@ -1,12 +1,15 @@
 from django.shortcuts import render
 from .models import Furniture
 
+
 def categories(request):
     return render(request, 'categories.html')
 
 
 def kitchens(request):
     kitchens = Furniture.objects.filter(option='kitchens')
+    for img in kitchens:
+        print(img.photo)
     context = {
         'products' : kitchens
     }
@@ -46,7 +49,7 @@ def hallways(request):
 
 
 def lounges(request):
-    lounges = Furniture.objects.filter(option=lounges)
+    lounges = Furniture.objects.filter(option='lounges')
     context = {
         'products' : lounges
     }
@@ -54,14 +57,14 @@ def lounges(request):
 
 
 def child(request):
-    child = Furniture.objects.filter(option=child)
+    child = Furniture.objects.filter(option='child')
     return render(request, 'products.html', {
         'products': child
     })
 
 
 def closets(request):
-    closets = Furniture.objects.filter(option=closets)
+    closets = Furniture.objects.filter(option='closets')
     context = {
         'products' : closets
     }
@@ -69,7 +72,7 @@ def closets(request):
 
 
 def others(request):
-    others = Furniture.objects.filter(option=others)
+    others = Furniture.objects.filter(option='others')
     context = {
         'products' : others
     }

@@ -16,8 +16,9 @@ class Furniture(models.Model):
     )
 
     title = models.CharField(max_length=20, verbose_name="Название")
-    photo = models.ImageField(blank=True, verbose_name="Фото")
+    photo = models.ImageField(blank=True, verbose_name="Фото", upload_to="categories/")
     option = models.CharField(max_length=20, choices=TYPES, verbose_name="Категория")
+    
     class Meta:
         verbose_name = "Мебель"
         verbose_name_plural = "Мебель"

@@ -1,0 +1,18 @@
+.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: calc(100%/3);
+}
+
+.item h1{
+
+    text-align: center;
+    color: black;
+    position: absolute;
+}
+.photo{
+    height:400px;
+}

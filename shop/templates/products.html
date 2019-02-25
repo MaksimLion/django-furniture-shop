@@ -1,10 +1,20 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block extra-styles %}
-
+    <link rel="stylesheet" href="{% static 'css/products.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media-products.css' %}">
 {% endblock extra-styles %}
-    {% for product in products %}
-        <div>{{product.title}}</div>
-    {% endfor %}
+   
 {% block content%}
+    <div class="items">
+    {% for product in products %}
+        <div class="item">
+            <h1>{{product.title}}</h1>
+            <div class="photo">
+            <img src="{{product.photo.url}}" alt="item" height="100%" width="100%">
+            </div>   
+        </div>
+    {% endfor %}
+    </div>
+
 {% endblock content%}
