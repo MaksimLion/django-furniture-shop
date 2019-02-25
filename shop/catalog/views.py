@@ -1,12 +1,6 @@
 from django.shortcuts import render
 from .models import Furniture
 
-
-
-def main(request):
-    return render(request, 'main.html')
-
-
 def categories(request):
     return render(request, 'categories.html')
 

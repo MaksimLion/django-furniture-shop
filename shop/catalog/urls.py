@@ -6,7 +6,6 @@ from catalog import views
 
 
 urlpatterns = [
-    path('main', views.main),
     path('', views.categories),
     path('kitchens', views.kitchens, name='kitchens'),
     path('wardrobes', views.wardrobes),
