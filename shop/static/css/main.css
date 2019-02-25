@@ -1,0 +1,28 @@
+.page-name{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.our-achievements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.achievement-item{
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.achievement-item i {
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.achievement-item h2{
+    text-align: center;
+    text-transform: uppercase;
+}

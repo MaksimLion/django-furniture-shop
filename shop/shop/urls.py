@@ -20,6 +20,11 @@ from django.conf import settings
 from django.urls import path, include
 
 urlpatterns = [
+    path('', include('main.urls')),
     path('admin/', admin.site.urls),
-    path('main/', include('catalog.urls'))
+    path('categories/', include('catalog.urls')),
+    path('about-us/', include('about.urls')),
+    
+    # path('article/', include('articles.urls')),
+    # path('sales/', include('sales.urls')),
 ]+ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

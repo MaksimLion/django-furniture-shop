@@ -14,10 +14,12 @@ header {
     background-size: cover;
     display: flex;
     justify-content: space-between;
+    height: 1000px;
 }
 
 .menu {
     width: 20%;
+    background: rgba(8, 7, 8, 0.9);
 }
 
 .menu ul {
@@ -25,20 +27,31 @@ header {
 }
 
 .menu ul li {
-    padding: 30px;
+    width:100%;
     color: white;   
     text-transform: uppercase;
 }
 
 .menu ul li a{
+    text-align: center;
+    padding: 30px 0;
+    display: block;
     text-decoration: none;
-    color: white;   
+    color: white;  
+    width: 100%;
+    height:100%; 
+    transition: all 0.3s
 }
 
-
+.menu ul li a:hover{
+    background-color: white;
+    color:black;
+}
 
 .info-block {
     width: 20%;
+    text-align: center;
+    padding-right: 10%;
 }
 
 .info-text {
@@ -50,21 +63,37 @@ header {
     color: white;
 }
 
-.info-block {
-    text-align: center;
-}
-
 .numbers {
     margin-top: 30px;
     list-style-type: none;
     color:white;
 }
 
-.pre-footer{
+.request-btn {
+    display: block;
+    margin-left: 5%;
+    margin-top: 10%;
+    text-transform: uppercase;
+    color:white;
+    border-radius: 14px;
+    border-color: white;
+    background: none;
+    padding:10px 30px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.4s linear, transform 0.3s linear;
+    width: 50%;
+}
+
+.request-btn:hover {
+    background-color: #e4ae58;
+}
+
+.pre-footer {
     border-top: 1px solid black;
 }
 
-.small-menu ul{
+.small-menu ul {
     margin-top: 30px;
     margin-bottom: 30px;
     display:flex;
@@ -74,6 +103,16 @@ header {
 
 .small-menu ul li{
     list-style-type: none;
+}
+
+.second-link{
+    color:black;
+    text-decoration: none;
+}
+
+.second-link:hover{
+    background-color: black;
+    color:white;
 }
 
 .footer{

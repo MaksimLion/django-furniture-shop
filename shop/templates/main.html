@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% block extra-styles %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/media-main.css' %}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+{% endblock extra-styles %}
+{% block content %}
+    <h1 class="page-name">Наши преимущества</h1>
+    <div class="our-achievements">
+
+        <div class="achievement-item">
+            <i class="fas fa-money-bill-alt"></i>
+            <h2>самые низкие цены</h2>
+        </div>
+
+        <div class="achievement-item">
+            <i class="fas fa-wrench"></i>
+            <h2>достойное качество</h2>
+        </div>
+
+        <div class="achievement-item">
+            <i class="fas fa-shopping-bag"></i>
+            <h2>широкий выбор материалов</h2>
+        </div>
+
+        <div class="achievement-item">
+            <i class="far fa-clock"></i>
+            <h2>всегда вкладываемся в сроки</h2>
+        </div>
+
+        <div class="achievement-item">
+            <i class="fas fa-people-carry"></i>
+            <h2>индивидуальный подход к клиентам</h2>
+        </div>
+
+        <div class="achievement-item">
+            <i class="fas fa-heart"></i>
+            <h2>мы любим своё дело</h2>
+        </div>
+        
+    </div>
+    
+
+{% endblock content %}
