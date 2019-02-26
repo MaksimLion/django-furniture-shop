@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block extra-styles %}
+{% endblock extra-styles %}
+{% block content %}
+    <ul сlass="sales">
+    {% for sale in sales %}
+        <li class="sale-item">{{sale.text}}</li>
+    {% endfor %}
+    </ul>
+{% endblock content%}
