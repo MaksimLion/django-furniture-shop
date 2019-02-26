@@ -1,0 +1,10 @@
+.sales{
+    width: 100%;
+}
+
+.sale-item{
+    text-align: center;
+    list-style-type: none;
+    margin-top: 50px;
+    font-size: 25px;
+}

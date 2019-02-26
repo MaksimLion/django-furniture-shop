@@ -8,8 +8,6 @@ def categories(request):
 
 def kitchens(request):
     kitchens = Furniture.objects.filter(option='kitchens')
-    for img in kitchens:
-        print(img.photo)
     context = {
         'products' : kitchens
     }

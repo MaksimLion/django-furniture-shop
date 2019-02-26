@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 {% block extra-styles %}
+    <link rel="stylesheet" href="{% static 'css/sales.css' %}">
 {% endblock extra-styles %}
+
 {% block content %}
     <ul сlass="sales">
     {% for sale in sales %}
