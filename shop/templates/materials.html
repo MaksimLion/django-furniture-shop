@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block extra-styles %}
+<link rel="stylesheet" href="{% static 'css/materials.css' %}">
+
+{% endblock extra-styles %}
+{% block content %}
+<div class="categories">
+
+    <div class="categories-item">
+        <h1 class="item-title">лдсп</h1>
+        <div class="description">Самым популярным материалом для производства мебели является древесно-стружечная плита
+            (ДСП). Главным и неоспоримым достоинством ДСП является её низкая стоимость и простота в обработке.
+            Древесно-стружечные плиты изготавливаются из специальной древесной стружки путем горячего прессования с
+            добавлением связующей термореактивной синтетической смолы и других ингредиентов.
+
+            Новую эру в производстве корпусной мебели открыло изобретение ламинированного покрытия, принеся с собой
+            качественно-эксплуатационные характеристики и новые эталоны дизайна мебели. Впервые ламинирование было
+            применено к древесно-стружечной плите (ДСП). Ламинирование - один из наиболее распространенных способов
+            облицовки древесно-стружечной плиты бумажно-смоляной пленкой.
+
+            Сама по себе древесно-стружечная плита (ДСП) имеет много недостатков: недостаточно ровная поверхность,
+            рыхлая структура, неустойчивость к воздействию влаги, температуры и агрессивным средам. Ламинированная
+            древесно-стружечная плита намного более устойчива к таким вредным воздействиям как повышенная влажность,
+            перепад температур, механическое воздействие, попадание прямых солнечных лучей и др. Процесс ламинирования
+            делает древесно-стружечную плиту (ДСП) намного более прочной, поверхность её становится гладкой, однородной.
+            Ламинирование ДСП гарантирует гораздо более продолжительный срок эксплуатации и высокую степень
+            экологичности.</div>
+        <div class="types">
+            <a href="/materials/kronospan" class="type">
+                <div class="type-item kronospan">
+                    <h2 class="type-name">kronospan</h2>
+                </div>
+            </a>
+            <a href="/materials/swisspan" class="type">
+                <div class="type-item swisspan">
+                    <h2 class="type-name">swisspan</h2>
+                </div>
+            </a>
+            <a href="/materials/swisspan-natur" class="type">
+                <div class="type-item swisspan-natur">
+                    <h2 class="type-name">swisspan natur</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="categories-item">
+        <h1 class="item-title">створки</h1>
+        <div class="description"></div>
+        <div class="types">
+            <a href="/materials/leafs" class="type">
+                <div class="type-item leaf">
+                    <h2 class="type-name">Разделение створок</h2>
+                </div>
+            </a>
+        </div>
+        <div class="benefit-links">
+            <a href="#">система senator</a>
+            <a href="#">устройство створки</a>
+            <a href="#">система hettich</a>
+        </div>
+    </div>
+
+    <div class="categories-item">
+        <h1 class="item-title">кромка</h1>
+        <div class="description"></div>
+    </div>
+
+    <div class="categories-item">
+        <h1 class="item-title">фурнитура</h1>
+        <div class="description"></div>
+        <div class="types">
+            <a href="/materials/blum" class="type">
+                <div class="type-item blum">
+                    <h2 class="type-name">blum</h2>
+                </div>
+            </a>
+
+            <a href="/materials/hettich/" class="type">
+                <div class="type-item hettich">
+                    <h2 class="type-name ">hettich</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

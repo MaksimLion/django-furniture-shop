@@ -1,0 +1,102 @@
+.categories{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.categories-item{
+    display: block;
+    margin-top: 30px;
+}
+
+.item-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description{
+    margin-top: 10px;
+}
+
+.types{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.type{
+    display: block;
+    width: calc(100%/3);
+    text-decoration: none;
+}
+
+.type-item{
+    display: flex;
+    height: 350px;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+.kronospan{
+    background-image: url('../images/kronospan-1.jpg')
+}
+
+.kronospan:hover{
+    background-image: url('../images/kronospan-2.jpg')
+}
+
+.swisspan{
+    background-image: url('../images/swisspan-1.jpg');
+}
+
+.swisspan:hover{
+    background-image: url('../images/swisspan-2.jpg');
+}
+
+.swisspan-natur{
+    background-image: url('../images/natur-1.jpg');
+}
+
+.swisspan-natur:hover{
+    background-image: url('../images/natur-2.jpg');
+}
+
+.leaf{
+    background-image: url('../images/leaf-1.jpg');
+}
+
+.leaf:hover{
+    background-image: url('../images/leaf-2.jpg');
+}
+
+.blum{
+    background-image: url('../images/blum-1.jpg');
+}
+
+.blum:hover{
+    background-image: url('../images/blum-2.jpg');
+}
+
+.hettich{
+    background-image: url('../images/hettich-1.jpg');
+}
+
+.hettich:hover{
+    background-image: url('../images/hettich-2.jpg');
+}
+
+.type-name{
+    text-transform: uppercase;
+    margin: auto;
+    color:white;
+    padding: 10px;
+    background-color:black;
+    
+}
+
+.benefit-links{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+

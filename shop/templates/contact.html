@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block extra-styles %}
+{% endblock extra-styles %}
+{% block content %}
+<div class="contacts">
+    <div class="form-block">
+        <form action="#" method="POST">
+            {% csrf token%}
+            {% for field in forms%}
+
+            {% endfor%}
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,40 +1,69 @@
 from django.db import models
 
 
-# class DSP(models.Model):
-#     KRONOSPAN = "KRONOSPAN"
-#     SWISSPAN = "SWISPAN"
-#     SWISSPAN_NATUR = "SWISPAN_NATUR" 
-#     BRANDS = (
-#         (KRONOSPAN, "KRONOSPAN"),
-#         (SWISSPAN, "SWISPAN"),
-#         (SWISSPAN_NATUR, "SWISPAN NATUR"),
-#     )
+class Kromka(models.Model):
+    title = models.CharField(max_length=30, verbose_name="Название")
+    photo = models.ImageField(blank=True, upload_to="materials/kromka/", verbose_name="Фотография")
+    text = models.TextField(verbose_name="Описание")
 
-#     title = models.CharField(max_length=20, verbose_name="Название")
-#     description = models.TextField(verbose_name="Описание")
-#     brand = models.CharField(choices=BRANDS, max_length="Бренд")
+    def __str__(self):
+        return self.title
 
-#     def __str__(self):
-#         return self.title
+    class Meta:
+        verbose_name = "Кромка"
+        verbose_name_plural = "Кромки"
 
 
-# class Sash(models.Model):
-#     SENATOR_SYSTEM = "SYNATER_SYSTEM"
-#     HETTICH_SYSTEM = "SYSTEM_HETTICH"
-#     SASH_SEPARATION = "SASH_SEPARATION"
-#     SASH_DEVICE = "SASH_DEVICE"
+class Leafs(models.Model):
+    title = models.CharField(max_length=30, verbose_name="Название")
+    photo = models.ImageField(blank=True, upload_to="materials/leafs/", verbose_name="Фотография")
+
+    def __str__(sefl):
+        return sefl.title
+
+    class Meta:
+        verbose_name = "Створка"
+        verbose_name_plural = "Створки"
+
+
+class LDSP(models.Model):
+    KRONOSPAN = "Kronospan"
+    SWISSPAN = "Swisspan"
+    SWISSPAN_NATUR = "Swisspan_natur"
     
-#     CATEGORIES = (
-#         (SENATOR_SYSTEM, "Система SENATOR"),
-#         (HETTICH_SYSTEM, "Система HETTICH"),
-#         (SASH_SEPARATION, "Разделение створок")
-#         (SASH_DEVICE, "Устройство створки")
-#     )
+    OPTION = (
+        (KRONOSPAN, "KRONOSPAN"),
+        (SWISSPAN, "SWISSPAN"),
+        (SWISSPAN_NATUR, "SWISSPAN_NATUR"),
+    )
 
-#     option = models.CharField(choices=CATEGORIES, max_length=30)
-#     photo = models.ImageField(blank=True)
+    title = models.CharField(max_length=30, verbose_name="Название")
+    option = models.CharField(max_length=50, verbose_name="Производитель", choices=OPTION)
+    photo = models.ImageField(blank=True, upload_to="materials/LDSP/", verbose_name="Фотография")
 
-    
+    def __str__(self):
+        return self.title
 
-    
+    class Meta:
+        verbose_name = "ЛДСП"
+        verbose_name_plural = "ЛДСП"
+
+
+class FurnitureAccessories(models.Model):
+    BLUM = "Blum"
+    HETTICH = "Hettich"
+
+    OPTION = (
+        (BLUM, "BlUM"),
+        (HETTICH, "HETTICH")
+    )
+
+    title = title = models.CharField(max_length=50, verbose_name="Название")
+    photo = models.ImageField(blank=True, upload_to="materials/furniture_accessories/", verbose_name="Фотография")
+    option = models.CharField(max_length=30, verbose_name="Производитель", choices=OPTION)
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Фурнитура"
+        verbose_name_plural = "Фурнитура"
