@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import LDSP, Leafs, Kromka, FurnitureAccessories
 
-# Register your models here.
+admin.site.register(FurnitureAccessories)
+admin.site.register(LDSP)
+admin.site.register(Kromka)
+admin.site.register(Leafs)

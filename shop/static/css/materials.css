@@ -1,11 +1,13 @@
 .categories{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
 }
 
 .categories-item{
     display: block;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .item-title{
