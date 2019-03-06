@@ -65,6 +65,18 @@
     <div class="categories-item">
         <h1 class="item-title">кромка</h1>
         <div class="description"></div>
+        <div class="blocks">
+            {% for item in kromka %}
+            <div class="block">
+                <div class="name">{{item.title}}</div>
+                <div class="photo">
+                    <img src="{{item.photo.url}}" alt="photo">
+                    <p class=text>{{item.text}}</p>
+                </div>
+                
+            </div>
+            {% endfor %}
+        </div>
     </div>
 
     <div class="categories-item">

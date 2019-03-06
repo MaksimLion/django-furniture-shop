@@ -2,7 +2,7 @@
     width: 100%;
     margin: 0 auto;
     background-image: url('../images/background.jpg');
-    background-size: cover;
+    background-size: repeat;
 }
 
 .categories-item{
@@ -13,10 +13,15 @@
 .item-title{
     text-align: center;
     text-transform: uppercase;
+    color:white;
+    padding: 10px;
+    background-color:black;
 }
 
 .description{
     margin-top: 10px;
+    color: white;
+    padding: 10px;
 }
 
 .types{
@@ -92,13 +97,49 @@
     margin: auto;
     color:white;
     padding: 10px;
-    background-color:black;
-    
+    background-color:black;   
+}
+
+.block{
+    margin-top:30px;
+}
+
+.name{
+    background-color: black;
+    color:white;
+    text-align: left;
+    width: auto;
+    font-size: 30px;
+}
+
+.text{
+    color:white;
+    margin-left: 10px;
+}
+
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo img{
+    height: 200px;
 }
 
 .benefit-links{
     display: flex;
     margin-top: 30px;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.benefit-links a{
+    color:white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.benefit-links a:hover{
+    color:blue;
 }
 

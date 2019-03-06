@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block extra-styles %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
 {% endblock extra-styles %}
 {% block content %}
 <div class="contacts">
+    <h1>Форма связи с нами</h1>
     <div class="form-block">
         <form action="/contacts/" method="POST">
             {% csrf_token%}
             {% for field in forms %}
-                <label class="" for="{{ field.id_for_label }}">{{ field.label }}</label>
+                <label class="label" for="{{ field.id_for_label }}">{{ field.label }}</label>
                 <div class="input">
                     {{field}}
                 </div>
@@ -16,6 +18,7 @@
             <button>Отправить</button>
         </form>
     </div>
+    <h1>Мы в социальных сетях</h1>
 </div>
 
 {% endblock content %}
