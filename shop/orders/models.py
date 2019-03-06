@@ -8,7 +8,7 @@ class Order(models.Model):
     RENOUNCEMENT = "renouncement"
     COMPLETE = "complete"
     WITH_QUESTION = "?"
-
+    
     STATUSES = (
         (NEW, "Новый заказ"),
         (IN_PROCESS, "Заказ в процессе обработки"),
