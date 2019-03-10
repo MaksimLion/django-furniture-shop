@@ -19,7 +19,7 @@ class Order(models.Model):
 
     cost = models.CharField(max_length=30, verbose_name="Стоимость", default=0)
     owner = models.CharField(max_length=30, verbose_name="Имя отправителя")
-    phone = models.CharField(max_length=10, verbose_name="Телефон")
+    phone = models.CharField(max_length=50, verbose_name="Телефон")
     status = models.CharField(max_length=30, verbose_name="Статус", choices=STATUSES, default=NEW)
     created_date = models.DateTimeField(default=now, editable=False, verbose_name="Дата")
 

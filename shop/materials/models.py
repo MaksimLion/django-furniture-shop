@@ -15,11 +15,26 @@ class Kromka(models.Model):
 
 
 class Leafs(models.Model):
+    PHOTOPRINT = "photoprint"
+    DEROCATE = "decorated"
+    PESKOSTRYI = "sandblast"
+    EKOKOZHA = "ekokozha"
+    LAMINIROVANIE = "laminirovanie"
+
+    OPTION = (
+        (PHOTOPRINT, "Фотопечать"),
+        (DEROCATE, "Декоративные перегородки"),
+        (PESKOSTRYI,"Пескоструи"),
+        (EKOKOZHA, "Экокожа"),
+        (LAMINIROVANIE, "Ламинирование ДСП")
+    )
+
     title = models.CharField(max_length=30, verbose_name="Название")
     photo = models.ImageField(blank=True, upload_to="materials/leafs/", verbose_name="Фотография")
+    option = models.CharField(choices=OPTION, max_length=100, verbose_name="Категория")
 
-    def __str__(sefl):
-        return sefl.title
+    def __str__(self):
+        return self.title
 
     class Meta:
         verbose_name = "Створка"

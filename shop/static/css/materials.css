@@ -44,6 +44,46 @@
     transition: all 0.5s;
 }
 
+.sandblast{
+    background-image: url('../images/pesko-1.jpg');
+}
+
+.sandblast:hover{
+    background-image: url('../images/pesko-2.jpg');
+}
+
+.photoprint{
+    background-image: url('../images/photoprint.jpg');
+}
+
+.photoprint:hover{
+    background-image: url('../images/photoprint-2.jpg')
+}
+
+.decorative{
+    background-image: url('../images/decorate-1.jpg');
+}
+
+.decorative:hover{
+    background-image: url('../images/decorate-2.jpg');
+}
+
+.leather{
+    background-image: url('../images/ek-1.jpg');
+}
+
+.leather:hover{
+    background-image: url('../images/ek-2.jpg');
+}
+
+.ldsp{
+    background-image: url('../images/ldsp-1.jpg');
+}
+
+.ldsp:hover{
+    background-image: url('../images/ldsp-2.jpg');
+}
+
 .kronospan{
     background-image: url('../images/kronospan-1.jpg')
 }
